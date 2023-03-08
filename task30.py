@@ -12,5 +12,18 @@ def arithmetic_progression(first: int,
     1) первый элемент
     2) разность
     3) количество элементов"""
+    list_ap = []
+    for num in range(1, quantity + 1):
+        an = first + (num - 1) * diff
+        list_ap.append(an)
+    return list_ap
 
-    pass
+
+# print("Введите первый элемент массива= ", end =" ")
+# first = int(input())
+# print("Введите разность элемент массива= ", end =" ")
+# diff = int(input())
+# print("Введите колличество элемент массива= ", end =" ")
+# quantity = int(input())
+
+# print(arithmetic_progression(first, diff, quantity))
